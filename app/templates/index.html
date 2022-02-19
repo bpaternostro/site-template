@@ -1,0 +1,17 @@
+{% extends "structure.html" %}
+
+{% block main %}
+<div class="container">
+    <h1>Home page of ToDo</h1>
+    <form action="/login" method='post'>
+        <input placeholder="Email" name="username" type="text">
+        <input placeholder="Password" name="password" type="password">
+        <input class="submit-button" type = "submit">
+    </form>
+    <p>{{ message }}</p>
+    
+    <br>
+    <a href="/sing-up">Sing Up</a>
+</div>
+
+{% endblock main %}
