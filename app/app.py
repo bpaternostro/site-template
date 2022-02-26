@@ -5,7 +5,7 @@ def create_app():
     
     @app.route('/')
     def index():
-        return 'Hello, Bruce Pater!'
+        return render_template('index.html')
     
     @app.route('/about',methods = ['GET'])
     def about():
